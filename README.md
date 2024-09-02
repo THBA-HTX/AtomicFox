@@ -3,4 +3,8 @@ Atomic Fox Jumps Around Like a Crazy ( But Not Lazy )  Fox.
 
 ## This is a tribute to the moon landing 
 
-sfgsfgasdfasdfas
+sfgsfgasdfasdfasasdfasdasd
+
+## Installation method 
+
+asdfasdfasd aasdf asdfasdfasd fd
