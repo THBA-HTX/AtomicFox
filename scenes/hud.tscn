@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://grp54qvmcsqr"]
+
+[ext_resource type="Script" path="res://scenes/Hud.cs" id="1_01ek0"]
+[ext_resource type="FontFile" uid="uid://btv4m3b45ptw6" path="res://fonts/ARCADECLASSIC.TTF" id="1_m8t3t"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_01ek0")
+
+[node name="GameUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Score" type="Label" parent="GameUI"]
+layout_mode = 0
+offset_left = 936.0
+offset_top = 15.0
+offset_right = 1131.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.843006, 0.743809, 0.0160268, 1)
+theme_override_fonts/font = ExtResource("1_m8t3t")
+theme_override_font_sizes/font_size = 36
+text = "Score : 0000"
+horizontal_alignment = 2

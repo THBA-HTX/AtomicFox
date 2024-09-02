@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://67q8aqkfcxel"]
+
+[ext_resource type="Texture2D" uid="uid://crobfalik8w8f" path="res://art/coin_silver.png" id="1_fqatc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_phl1h"]
+size = Vector2(15, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvtb8"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhgn7"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_guiod"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5iopm"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4bvs"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14ol1"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ffq7"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avh3e"]
+atlas = ExtResource("1_fqatc")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pqvgs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvtb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhgn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_guiod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5iopm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4bvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14ol1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ffq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avh3e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CoinSilver" type="RigidBody2D"]
+position = Vector2(614, 256)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -8)
+shape = SubResource("RectangleShape2D_phl1h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_pqvgs")
+autoplay = "default"
